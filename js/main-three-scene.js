@@ -71,7 +71,7 @@ class MainThreeSceneClass {
     start() {
       window.addEventListener("resize", this.resizeCanvas)
       window.addEventListener("mousemove", this.onMouseMove)
-      this.container.style = 'display: block'
+      this.container.style = 'display: none'
       this.update()
   
     }
