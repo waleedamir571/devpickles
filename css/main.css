@@ -38,6 +38,20 @@ body {
 }
 
 
+.arrow-link::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 1px;
+    right: 16px;
+    bottom: -9px;
+    border: 2px solid #fff;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+
 .creative {
     color: #FFF;
     font-family: "Big Shoulders Display", sans-serif;
@@ -3205,7 +3219,7 @@ ul li {
     -o-transition: all .4s cubic-bezier(.86, 0, .07, 1);
 }
 
-.arrow-link:after,
+/* .arrow-link:after,
 .arrow-link:before {
     background-color: #eeeef2;
     bottom: 0;
@@ -3228,7 +3242,7 @@ ul li {
     -ms-transition-delay: .3s;
     transition-delay: .3s;
     width: 100%
-}
+} */
 
 .arrow-link:after {
     transform: scaleX(0);
@@ -3969,34 +3983,30 @@ article.testimonial h3 {
 .button1::before {
     content: '';
     position: absolute;
-    top: -6px; /* Adjust distance for outer border */
-    left: -6px;
-    right: -6px;
-    bottom: -6px;
-    border: 2px solid #6200EA; /* Border color */
-    z-index: -1; /* Place behind the button */
-    opacity: 0.7;
-  }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid #5000F4; /* Create the outer border */
+    z-index: -1; /* Send the border behind the button content */
+    transform: scale(1.05); /* Slightly larger border frame */
+    transition: transform 0.3s ease-in-out;
+}
 
-  /* Inner shadow effect */
-  .button1::after {
-    content: '';
-    position: absolute;
-    top: -12px;
-    left: -12px;
-    right: -12px;
-    bottom: -12px;
-    border: 2px solid #6200EA;
-    z-index: -2;
-    opacity: 0.4;
-  }
+.button1:hover::before {
+    transform: scale(1.15); /* Smoothly expand the border on hover */
+}
 
-  /* Hover effect to make it more dynamic */
-  .button1:hover::before,
-  .button1:hover::after {
-    transform: scale(1.05); /* Slightly enlarge the borders on hover */
-  }
+.button1:hover {
+    background: #5000F4; /* Fill background on hover */
+    color: white; /* Change text color on hover */
+}
 
+/* Optional: Style for the inner text */
+.button1 span {
+    position: relative;
+    z-index: 2; /* Keep the text above everything */
+}
   .scroll{
     color: #FFF;
 text-align: right;
@@ -4574,8 +4584,8 @@ text-transform: uppercase;
 
 #clients .clients-left p {
     align-self: flex-end;
-    margin-bottom: 1em;
-    opacity: .6
+    margin-bottom: 2em;
+    opacity: .6;
 }
 
 #clients .client-wrap {
@@ -4597,7 +4607,7 @@ text-transform: uppercase;
 }
 
 #clients .client-wrap .client-item {
-    align-items: center;
+    /* align-items: center;
     aspect-ratio: 4/3;
     background-color: #222650;
     border-radius: 10px;
@@ -4606,7 +4616,7 @@ text-transform: uppercase;
     display: flex;
     justify-content: center;
     padding: 30px;
-    position: relative
+    position: relative */
 }
 
 #clients .client-stat {
@@ -4634,7 +4644,8 @@ text-transform: uppercase;
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%
+    width: 100%;
+    background: linear-gradient(180deg, #E500FF 0%, #A900CE 100%);
 }
 
 #clients .client-stat img {
@@ -4724,9 +4735,11 @@ text-transform: uppercase;
     -ms-transform: rotate(-45deg)
 }
 
+
+
 #clients .client-stat .stat-data i.decrease,
 #clients .client-stat .stat-data i.increase {
-    background: url(658a5042f12b98c729c4.svg);
+    background: url('../images/heart.svg');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 100%;
