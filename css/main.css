@@ -209,7 +209,11 @@ text-transform: uppercase;
 }
 
 .bs-xl-8 {
-    width: 33.3328vw
+    width: 33.3328vw;
+}
+
+.bs-xl-81 {
+    width: 25.3328vw !important;
 }
 
 .bs-xl-9 {
@@ -2638,6 +2642,21 @@ html.no-js #smooth-wrapper {
     left: 12rem;
 }
 
+.top2{
+    position: relative;
+    top: 2rem;
+}
+
+.recent-work1 {
+    color: #FFF;
+    font-size: 135px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160px;
+    text-transform: uppercase;
+}
+
+
 .recent-work{
     color: #FFF;
 
@@ -3552,7 +3571,7 @@ article.testimonial h3 {
     display: inline-block;
     flex: 0 0 auto;
     overflow: visible;
-    padding: 0;
+    padding: 45px;
     position: relative;
     z-index: 1
 }
