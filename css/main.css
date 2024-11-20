@@ -16,6 +16,10 @@ body {
   .align-items-end{
     align-items: end;
   }
+
+  .w-70{
+    width: 70%;
+  }
   
 
 .address{
@@ -2122,14 +2126,15 @@ img {
 #hamburger {
     align-items: center;
     cursor: pointer;
-    display: flex;
-    height: 60px;
+    display: flex
+;
+    height: 50px;
     justify-content: space-between;
     position: fixed;
     right: 4.1666vw;
     top: 4.1666vw;
-    width: 80px;
-    z-index: 100
+    width: 70px;
+    z-index: 100;
 }
 
 #hero .hero-hex {
@@ -2322,12 +2327,12 @@ img {
 }
 
 #logo {
-    height: 4.1666vw;
+    /* height: 4.1666vw; */
     left: 4.1666vw;
     position: fixed;
     top: 4.1666vw;
-    width: 4.1666vw;
-    z-index: 105
+    width: 6%;
+    z-index: 105;
 }
 
 #logo svg path {
@@ -2377,24 +2382,26 @@ html.no-js #smooth-wrapper {
 }
 
 #smooth-wrapper {
-  
     border-radius: 20px;
     bottom: 10px !important;
     height: calc(100% - 20px) !important;
-    left: 10px !important;
+    left: 0px !important;
     overflow: hidden !important;
     right: 10px !important;
+    position: relative;
     top: 10px !important;
     transition: opacity .4s cubic-bezier(.23, 1, .32, 1);
     -webkit-transition: opacity .4s cubic-bezier(.23, 1, .32, 1);
     -moz-transition: opacity .4s cubic-bezier(.23, 1, .32, 1);
     -o-transition: opacity .4s cubic-bezier(.23, 1, .32, 1);
-    width: calc(100% - 20px) !important;
+    /* width: calc(100% - 20px) !important; */
     z-index: 5;
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
-    background-size: inherit;
+    background-size: cover;
+    background-color: transparent;
 }
+
 
 #smooth-wrapper.is-animating,
 #smooth-wrapper.is-exiting {
@@ -4296,7 +4303,7 @@ text-transform: uppercase;
 
     #logo {
         left: 3.12495vw;
-        top: 3.12495vw
+        top: 2.12495vw;
     }
 
     #hamburger {
@@ -5292,7 +5299,7 @@ text-transform: uppercase;
 
     .bs-xl-os-1 {
         /* margin-left: 0; */
-        margin-left: -13.8334vw;
+        margin-left: -1.8334vw;
     }
 
     .recent-work1 {
@@ -5386,10 +5393,10 @@ text-transform: uppercase;
 
     .about1 {
         color: #FFF;
-        font-size: 36px;
+        font-size: 32px;
         font-style: normal;
-        font-weight: 800;
-        line-height: 60px;
+        font-weight: 700;
+        line-height: 49px;
         text-transform: uppercase;
     }
 
@@ -6575,7 +6582,7 @@ ul.service-list li:last-of-type a {
 }
 
 .blur-circle {
-    background: radial-gradient(#6b79ee 0, rgba(107, 121, 238, 0) 70%);
+    /* background: radial-gradient(#6b79ee 0, rgba(107, 121, 238, 0) 70%); */
     border-radius: 50%;
     height: 60vw;
     left: 50%;
