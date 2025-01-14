@@ -13,6 +13,42 @@ body {
     
   }
 
+  .scrollPattern {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+  .home #hero {
+    align-items: flex-start;
+    height: 100vh;
+    min-height: auto;
+    padding-bottom: 4.1666vw;
+    padding-top: 17.5vh;
+    z-index: 5;
+}
+
+  #menu-slide {
+    font-family: TT Tunnels Bold, Impact, sans-serif;
+    height: 60vh;
+    left: 10px;
+    overflow: hidden;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    z-index: 50;
+}
+
   .align-items-end{
     align-items: end;
   }
@@ -1469,7 +1505,7 @@ textarea:-webkit-autofill:hover {
 }
 
 body {
-    background-color: #eeeef2;
+    /* background-color: #eeeef2; */
     color: #eeeef2;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -2382,6 +2418,7 @@ html.no-js #smooth-wrapper {
 }
 
 #smooth-wrapper {
+    display: block !important;
     border-radius: 20px;
     bottom: 10px !important;
     height: calc(100% - 20px) !important;
@@ -2396,7 +2433,7 @@ html.no-js #smooth-wrapper {
     -o-transition: opacity .4s cubic-bezier(.23, 1, .32, 1);
     /* width: calc(100% - 20px) !important; */
     z-index: 5;
-    background-image: url(../images/bg.png);
+    background: url('https://hoisolution.com/dev-pickles/images/bg.png') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
@@ -2405,7 +2442,7 @@ html.no-js #smooth-wrapper {
 
 #smooth-wrapper.is-animating,
 #smooth-wrapper.is-exiting {
-    opacity: 0
+    opacity: 1;
 }
 
 .content {
@@ -8290,8 +8327,10 @@ ul.service-list li:last-of-type a {
     #hero .hero-hex {
         height: 85vw;
         top: 40%;
-        width: 85vw
+        width: 85vw;
     }
+
+ 
 
     #smooth-wrapper {
         bottom: auto !important;
@@ -8301,7 +8340,10 @@ ul.service-list li:last-of-type a {
         overflow: visible;
         right: auto !important;
         top: 0 !important;
-        width: 100% !important
+        width: 100% !important;
+        background: url(https://hoisolution.com/dev-pickles/images/bg.png) !important;
+        background-repeat: no-repeat;
+        background-size: cover !important;
     }
 
     #smooth-wrapper .content {
